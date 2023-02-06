@@ -1,0 +1,180 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login;verify-the-user-login-fail-with-an-invalid-account;;2",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "Verify the user login fail with an invalid account",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the user opens the Login page",
+            "result": {
+              "duration": 11034000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 6,
+            "name": "the user logins an account by entering a user as \"vnarla@amps.com\" and password as \"Test@124\"",
+            "result": {
+              "duration": 927000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 7,
+            "name": "the error \"Login Failed\" is displayed",
+            "result": {
+              "duration": 361000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario",
+        "tags": [
+          {
+            "line": 3,
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "description": "",
+        "id": "login;verify-the-user-login-success-with-a-valid-account;;2",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Verify the user login success with a valid account",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 14,
+            "name": "the user opens the Login page",
+            "result": {
+              "duration": 2170000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 15,
+            "name": "the user logins an account by entering a user as \"vnarla@amps.com\" and password as \"Test@123\"",
+            "result": {
+              "duration": 891000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 16,
+            "name": "the landing page should be loaded",
+            "result": {
+              "duration": 452000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Logout the application",
+            "result": {
+              "duration": 779000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;verify-the-user-login-success-with-a-valid-account;;3",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Verify the user login success with a valid account",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 14,
+            "name": "the user opens the Login page",
+            "result": {
+              "duration": 2364000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 15,
+            "name": "the user logins an account by entering a user as \"test_qa@amps.com\" and password as \"Test@123\"",
+            "result": {
+              "duration": 917000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 16,
+            "name": "the landing page should be loaded",
+            "result": {
+              "duration": 380000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Logout the application",
+            "result": {
+              "duration": 717000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Login",
+    "uri": "cypress/e2e/features/login.feature"
+  }
+]
